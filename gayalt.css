@@ -53,9 +53,10 @@ body {
     object-fit:cover;
 }
 
-.circle-icon i.bi-share-fill {
-    font-size: 14px;
-    color: #333;
+.circle-icon img.upload-custom {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
 }
 
 .profile {
