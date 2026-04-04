@@ -1,0 +1,222 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #04549b;
+    padding-top: 40px;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    background: #04549b url('https://ugc.production.linktr.ee/eac725f3-7004-44f5-9c6c-b61b5befa21c_linktree-background2.jpeg?io=true&size=background-profile-v1_0');
+    background-size: cover;
+    background-position: top center;
+    max-width: 580px;
+    margin: 0 auto;
+    min-height: 100vh;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 0;
+    position: relative;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.circle-icon {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.circle-icon img.linktree-custom {
+    width: 50%;
+    height: 50%;
+    object-fit:cover;
+}
+
+.circle-icon i.bi-share-fill {
+    font-size: 14px;
+    color: #333;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+
+.profile .avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.verified-badge {
+    width: 20px;
+    height: 20px;
+}
+
+.profile p {
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+
+.linked {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.link-button {
+    background-color: #80c5f9;
+    color: white !important;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 7px 0;
+    padding: 12px;
+    border-radius: 32px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none !important;
+    min-height: 64px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.link-button:hover {
+    background-color: #6fb5e9;
+    transform: scale(1.02);
+}
+
+.link-button:active {
+    transform: scale(0.98);
+}
+
+.btn-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.btn-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.icon-svg {
+    filter: invert(1);
+    width: 26px !important;
+}
+
+.btn-text {
+    flex: 1;
+    text-align: center;
+    padding: 0 10px;
+    line-height: 1.2;
+}
+
+.bi-three-dots-vertical {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+
+@keyframes pop-anim {
+    0% { transform: scale(1); }
+    12.5% { transform: scale(1.04); }
+    25% { transform: scale(1); }
+}
+
+.animate-pop {
+    animation: pop-anim 2.5s infinite ease-in-out;
+}
+
+
+.join-footer {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 10;
+}
+
+.fth-logo-footer {
+    width: 45px;
+    filter: brightness(0) invert(1);
+    opacity: 0.7;
+}
+
+.footer-links {
+    text-align: center;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 11px;
+    text-decoration: none;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+
+@media (max-width: 576px) {
+    body {
+        padding-top: 0;
+    }
+    .container {
+        border-radius: 0;
+        box-shadow: none;
+        max-width: 100%;
+    }
+}
